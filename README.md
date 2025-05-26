@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# Lobox Front-End Developer Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Thank you for the opportunity to complete this assignment as part of the application process for the Front-End Developer position at Lobox.
 
-Currently, two official plugins are available:
+## 🧩 Task Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Implement a **multi drop-down select component** with the following features:
 
-## Expanding the ESLint configuration
+- Select multiple items from a dropdown list.
+- Add new items by typing in the input field and pressing **Enter**.
+- Dropdown should close when clicking outside of it.
+- The component should be **reusable** and built with **clean, modular code**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- ⚛️ React.js
+- ⛑ TypeScript
+- 🎨 SCSS (styled to match the provided image as closely as possible)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Multi-select dropdown functionality
+- Custom item creation with keyboard input
+- Reusability via props
+- Click-outside-to-close behavior
+- Styled using SCSS modules
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Demo
+
+👉 [Live Demo](https://parham-ab-dropdown-assignment-lobox.netlify.app/) <!-- Replace with actual deployment link, e.g., Vercel, Netlify -->
+
+## 🧪 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/your-username/lobox-multiselect.git
+cd lobox-multiselect
+npm install
+npm run dev
